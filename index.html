@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Olympica</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="assets/css/olympica-theme.css">
+</head>
+<body class="d-flex flex-column h-100 bg-dark text-light">
+
+<!-- Inizio Menu  -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-4">
+        <a href="index.html" class="navbar-brand">
+            <img class="navbar-logo" src="assets/images/logo.png" alt="Olympica Logo" style="filter: invert(1)">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Soluzioni</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- Fine Menu  -->
+
+<!-- Inizio Hero Section  -->
+<section id="hero" class="position-relative overflow-hidden" style="height:100vh;">
+    <!-- Video Background -->
+    <video autoplay muted loop playsinline class="position-absolute top-0 start-0 w-100 h-100 video-object-fit-cover">
+        <source src="assets/videos/hero.mp4" type="video/mp4">
+        <!-- Fallback immagine statica -->
+        <img src="path/to/your-fallback.jpg" alt="Wellbeing aziendale" class="w-100 h-100 video-object-fit-cover">
+    </video>
+
+    <!-- Dark Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.6;"></div>
+
+    <!-- Content -->
+    <div class="container position-relative h-100 d-flex flex-column justify-content-center text-center px-4">
+        <!-- Headline -->
+        <h1 class="display-4 neon-text animate__animated animate__fadeInDown">
+            Il Futuro del Wellbeing Aziendale:
+            <br>
+            <span class="text-uppercase">Fitness & Gaming per un Team Vincente</span>
+        </h1>
+
+        <!-- Sottotitolo -->
+        <p class="lead mt-3 animate__animated animate__fadeInUp animate__delay-1s">
+            WeSports Center unisce sport e gaming per creare spazi relazionali innovativi nelle aziende,
+            migliorando benessere e produttività.
+        </p>
+
+        <!-- Call-to-Action Buttons -->
+        <div class="mt-4 animate__animated animate__zoomIn animate__delay-2s">
+            <a href="#format" class="btn btn-lg neon-border me-3 px-4 py-2 position-relative overflow-hidden">
+                Scopri il Format
+                <span class="btn-hover-glow"></span>
+            </a>
+            <a href="#contact-cta" class="btn btn-lg neon-border px-4 py-2 position-relative overflow-hidden">
+                Richiedi informazioni
+                <span class="btn-hover-glow"></span>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Fine Hero Section  -->
+
+<!-- Inizio Cos'è  -->
+<section id="format" class="py-5 bg-black text-light">
+    <div class="container px-4">
+        <!-- WeSports Center -->
+        <div class="row mb-5 py-5 align-items-center">
+            <div class="col-md-6" data-aos="fade-right">
+                <h2 class="neon-text mb-3">🎮 Cos’è WeSports Center?</h2>
+                <p>
+                    <strong>WeSports Center</strong> è un format di <span class="text-info">Corporate Wellbeing</span>
+                    unico nel suo genere.
+                    Integra fitness, gaming ed eSports per creare spazi aziendali innovativi in grado di favorire:
+                </p>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2">✅ Engagement e team building</li>
+                    <li class="mb-2">✅ Benessere psico-fisico</li>
+                    <li class="mb-2">✅ Formazione e sviluppo delle competenze</li>
+                </ul>
+                <p class="mt-3 text-secondary">
+                    L’idea si ispira ai principi della <strong>Carta Olimpica</strong> e dell’<strong>Agenda
+                    2030</strong>, promuovendo inclusione,
+                    sostenibilità e innovazione digitale nelle aziende e nelle comunità.
+                </p>
+            </div>
+            <div class="col-md-6 text-center" data-aos="zoom-in">
+                <img src="assets/images/wesports-center-logo.png" alt="WeSports Center"
+                     class="img-fluid rounded-4 shadow">
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="border-secondary my-5">
+
+        <!-- WeSports Village -->
+        <div class="row py-5 align-items-center flex-md-row-reverse">
+            <div class="col-md-6" data-aos="fade-left">
+                <h2 class="neon-text mb-3">🏙️ Cos’è WeSports Village?</h2>
+                <p>
+                    <strong>WeSports Village</strong> è un centro multifunzionale progettato per integrare tecnologie
+                    all’avanguardia e spazi formativi:
+                </p>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2">🕶 <strong>Realtà Virtuale (VR)</strong> e <strong>Mista (MR)</strong></li>
+                    <li class="mb-2">🎮 Simulatori di gioco avanzati</li>
+                    <li class="mb-2">🧠 Neurotraining per lo sviluppo cognitivo-motorio</li>
+                    <li class="mb-2">⚽ Aree dedicate allo SportTech</li>
+                    <li class="mb-2">🎓 Laboratori per aziende e scuole</li>
+                    <li class="mb-2">🚀 Innovation Lab per nuove tecnologie</li>
+                </ul>
+                <p class="mt-3 text-secondary">
+                    L’obiettivo è trasformare il gaming in uno <strong>strumento educativo e di benessere</strong>,
+                    migliorando le competenze
+                    individuali e collettive attraverso esperienze immersive.
+                </p>
+            </div>
+            <div class="col-md-6 text-center" data-aos="zoom-in">
+                <img src="assets/images/wesports-village-logo.png" alt="WeSports Village"
+                     class="img-fluid rounded-4 shadow">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fine Cos'è  -->
+
+<!-- Inizio VS  -->
+<section id="comparison-table" class="py-5 bg-dark text-light">
+    <div class="container px-4 py-5">
+        <h2 class="neon-text text-center mb-4">Wellbeing vs. Welfare</h2>
+        <div class="table-responsive">
+            <table class="table table-dark table-borderless align-middle text-center neon-table">
+                <thead>
+                <tr>
+                    <th scope="col">Caratteristica</th>
+                    <th scope="col">Welfare Aziendale</th>
+                    <th scope="col">Corporate Wellbeing</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Obiettivo</th>
+                    <td>Fornire benefit economici o agevolazioni</td>
+                    <td>Migliorare la qualità della vita lavorativa</td>
+                </tr>
+                <tr>
+                    <th scope="row">Esempi</th>
+                    <td>Buoni pasto, assicurazioni sanitarie, contributi pensionistici</td>
+                    <td>Spazi di gaming e fitness, programmi di team building, eventi aziendali</td>
+                </tr>
+                <tr>
+                    <th scope="row">Approccio</th>
+                    <td>Passivo (benefit erogati dall’azienda)</td>
+                    <td>Attivo (coinvolgimento diretto dei lavoratori)</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="lead text-secondary text-center mt-4">
+            <strong>WeSports Center</strong> rientra in un modello di <span
+                class="neon-text">Corporate Wellbeing attivo</span>,
+            offrendo soluzioni concrete per il miglioramento del clima aziendale e aumentando
+            l’attrattività dell’azienda per talenti e professionisti.
+        </p>
+    </div>
+</section>
+<!-- Fine VS  -->
+
+<!-- Inizio Caratteristiche ed Effetti  -->
+<section id="social-skills" class="py-5 bg-black text-light">
+    <div class="container px-4">
+
+        <!-- Parte 1: Tile per Effetti sulla Socialità -->
+        <section id="social-effects" class="py-5 bg-black text-light">
+            <div class="container px-4">
+                <h2 class="neon-text text-center mb-4">👥 Effetti sulla Socialità e sulle Soft Skills</h2>
+
+                <!-- Elenco puntato verticale -->
+                <ul class="list-group list-group-flush mb-5 neon-list">
+                    <li class="list-group-item bg-transparent text-secondary py-3" data-aos="fade-up">
+                        <h5 class="neon-text mb-1">Cooperazione</h5>
+                        <p>Nei giochi di squadra, il successo dipende dalla capacità di comunicare e collaborare.</p>
+                    </li>
+                    <li class="list-group-item bg-transparent text-secondary py-3" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <h5 class="neon-text mb-1">Gestione dello Stress</h5>
+                        <p>I videogiochi richiedono concentrazione e problem-solving, competenze fondamentali anche
+                            nel mondo del lavoro.</p>
+                    </li>
+                    <li class="list-group-item bg-transparent text-secondary py-3" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <h5 class="neon-text mb-1">Inclusione</h5>
+                        <p>Superano barriere fisiche e culturali, permettendo a tutti di partecipare.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- Parte 2: Griglia a blocchi per Competenze -->
+        <h3 class="neon-text text-center mb-4">💡 Competenze sviluppate</h3>
+        <div class="text-center mb-5">
+            <p class="lead text-secondary">
+                <strong>WeSports Center</strong> trasforma queste competenze in percorsi strutturati di apprendimento,
+                favorendo la crescita professionale e personale.
+            </p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Blocco 1 -->
+            <div class="col">
+                <div class="p-4 neon-border rounded-3 h-100 text-center" data-aos="zoom-in">
+                    <i class="bi bi-people display-4 neon-text"></i>
+                    <h5 class="mt-2">Teamwork</h5>
+                    <p class="text-secondary">Collaborazione e lavoro di squadra.</p>
+                </div>
+            </div>
+            <!-- Blocco 2 -->
+            <div class="col">
+                <div class="p-4 neon-border rounded-3 h-100 text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="bi bi-shield-check display-4 neon-text"></i>
+                    <h5 class="mt-2">Resilienza</h5>
+                    <p class="text-secondary">Capacità di adattarsi rapidamente a nuove situazioni.</p>
+                </div>
+            </div>
+            <!-- Blocco 3 -->
+            <div class="col">
+                <div class="p-4 neon-border rounded-3 h-100 text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="bi bi-puzzle display-4 neon-text"></i>
+                    <h5 class="mt-2">Problem-solving</h5>
+                    <p class="text-secondary">Affrontare e risolvere sfide in tempo reale.</p>
+                </div>
+            </div>
+            <!-- Blocco 4 -->
+            <div class="col">
+                <div class="p-4 neon-border rounded-3 h-100 text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="bi bi-lightbulb display-4 neon-text"></i>
+                    <h5 class="mt-2">Leadership</h5>
+                    <p class="text-secondary">Sviluppare capacità decisionali e strategiche.</p>
+                </div>
+            </div>
+            <!-- Blocco 5 -->
+            <div class="col">
+                <div class="p-4 neon-border rounded-3 h-100 text-center" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="bi bi-chat-dots display-4 neon-text"></i>
+                    <h5 class="mt-2">Comunicazione</h5>
+                    <p class="text-secondary">Condividere strategie e informazioni in modo chiaro.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fine Caratteristiche ed Effetti  -->
+
+<!-- Inizio Neurotraining  -->
+<section id="neuro-vr" class="py-5 text-light">
+    <div class="container px-4 py-5">
+        <!-- Titolo -->
+        <h2 class="neon-text text-center mb-5">🧠 Aspetto Cognitivo-Motorio e Tecnologie Innovative</h2>
+
+        <div class="row gy-5">
+            <!-- Blocco Neurotraining -->
+            <div class="col-lg-6" data-aos="fade-right">
+                <h3 class="neon-text mb-3">Che cos’è il Neurotraining?</h3>
+                <p class="text-secondary mb-3">
+                    Il Neurotraining è una metodologia innovativa che combina esercizi fisici e cognitivi per
+                    migliorare:
+                </p>
+                <ul class="list-unstyled text-secondary neon-list">
+                    <li class="mb-2"><strong>Tempi di reazione e riflessi</strong></li>
+                    <li class="mb-2"><strong>Memoria e concentrazione</strong></li>
+                    <li class="mb-2"><strong>Coordinazione motoria e precisione</strong></li>
+                    <li class="mb-2"><strong>Gestione dello stress e della fatica mentale</strong></li>
+                </ul>
+                <h5 class="neon-text mt-4">💡 Come funziona?</h5>
+                <p class="text-secondary">
+                    • Utilizza stimoli multisensoriali (visivi, uditivi e tattili) per rafforzare la connettività tra
+                    cervello e corpo.
+                    • Incorpora tecnologie avanzate, come sensori di movimento e intelligenza artificiale, per
+                    personalizzare gli esercizi in base alle esigenze del singolo utente.
+                    • Si applica a diversi contesti, dal miglioramento delle prestazioni sportive alla riabilitazione
+                    neuro-motoria fino all’ottimizzazione delle capacità cognitive per i lavoratori.
+                </p>
+            </div>
+
+            <!-- Blocco VR/MR -->
+            <div class="col-lg-6" data-aos="fade-left">
+                <h3 class="neon-text mb-3">🕶 Realtà Virtuale (VR) e Mista (MR)</h3>
+                <p class="text-secondary mb-3">
+                    La tecnologia VR/MR è una parte fondamentale del WeSports Center & Village, poiché permette di
+                    trasformare l'allenamento in un'esperienza coinvolgente e immersiva.
+                </p>
+                <div class="row gy-3">
+                    <div class="col-12">
+                        <h5 class="neon-text mb-1">🔹 Realtà Virtuale (VR)</h5>
+                        <p class="text-secondary ps-3">
+                            Trasporta l’utente in un ambiente simulato, offrendo esperienze interattive per allenamenti,
+                            simulazioni e training professionale.
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <h5 class="neon-text mb-1">🔹 Realtà Mista (MR)</h5>
+                        <p class="text-secondary ps-3">
+                            Combina elementi fisici e digitali, consentendo agli utenti di interagire con oggetti
+                            virtuali all'interno dello spazio reale.
+                        </p>
+                    </div>
+                </div>
+                <h5 class="neon-text mt-4">Benefici della VR/MR nel Corporate Wellbeing</h5>
+                <ul class="list-unstyled text-secondary">
+                    <li class="mb-2">✅ Miglioramento della concentrazione e della reattività</li>
+                    <li class="mb-2">✅ Simulazioni realistiche per l'apprendimento e la formazione</li>
+                    <li class="mb-2">✅ Riduzione dello stress grazie a esperienze immersive</li>
+                    <li class="mb-2">✅ Maggiore coinvolgimento nei programmi di allenamento</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Fine Neurotraining  -->
+
+<!-- Inizio Struttura tecnica  -->
+<section id="technical-structure" class="py-5 bg-black text-light">
+    <div class="container px-4 py-5">
+        <h2 class="neon-text text-center mb-5">6. Struttura Tecnica e Applicabilità</h2>
+
+        <!-- Blocco: Introduzione -->
+        <div class="mb-5" data-aos="fade-up">
+            <h3 class="neon-text mb-3">🏢 Come vengono definiti gli spazi?</h3>
+            <p class="text-secondary mb-4">
+                WeSports Center è progettato per essere <strong>modulare</strong> e <strong>scalabile</strong>,
+                adattabile a qualsiasi realtà aziendale o scolastica grazie a dimensioni flessibili e infrastrutture
+                dedicate.
+            </p>
+            <!-- IMAGE HERE -->
+            <div class="ratio ratio-16x9 rounded-3 overflow-hidden mb-4">
+                <img src="assets/images/nastya-dulhiier-jsci6GwAFBc-unsplash.jpg" alt="Layout modulare"
+                     class="object-fit-cover">
+            </div>
+            <ul class="list-unstyled text-secondary neon-list mb-4">
+                <li class="mb-2"><strong>Dimensioni flessibili</strong>: da 50 a 500 mq, a seconda delle esigenze</li>
+                <li class="mb-2"><strong>Infrastruttura</strong>: fibra ottica (1 Gbps), attrezzature VR/eSports,
+                    monitoraggio benessere
+                </li>
+                <li class="mb-2">Possibilità di installazione in Aziende (Corporate Wellbeing), Scuole e Università
+                    (programmi educativi) e Centri sportivi (training avanzato e neurotraining)
+                </li>
+            </ul>
+        </div>
+
+        <!-- Blocco: Area Gaming -->
+        <div class="mb-5 bg-transparent neon-border rounded-4 p-4" data-aos="fade-right">
+            <!-- IMAGE HERE -->
+            <div class="row align-items-center g-4">
+                <div class="col-md-5">
+                    <div class="ratio ratio-4x3 rounded-3 overflow-hidden">
+                        <img src="assets/images/area-gaming.png" alt="Area Gaming" class="object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h4 class="neon-text mb-2">📌 Area Gaming (50–70 mq)</h4>
+                    <p class="text-secondary mb-0">Tornei, team building e engagement aziendale in un contesto
+                        interattivo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blocco: Area VR/MR -->
+        <div class="mb-5 bg-transparent neon-border rounded-4 p-4" data-aos="fade-left">
+            <!-- IMAGE HERE -->
+            <div class="row align-items-center g-4 flex-md-row-reverse">
+                <div class="col-md-5">
+                    <div class="ratio ratio-4x3 rounded-3 overflow-hidden">
+                        <img src="assets/images/area-vr-mr.png" alt="Area VR/MR" class="object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h4 class="neon-text mb-2">📌 Area VR/MR (40–60 mq)</h4>
+                    <p class="text-secondary mb-0">Simulazioni immersive per training, salute e benessere con Realtà
+                        Virtuale e Mista.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blocco: Area Neurotraining -->
+        <div class="mb-5 bg-transparent neon-border rounded-4 p-4" data-aos="fade-right">
+            <!-- IMAGE HERE -->
+            <div class="row align-items-center g-4">
+                <div class="col-md-5">
+                    <div class="ratio ratio-4x3 rounded-3 overflow-hidden">
+                        <img src="assets/images/area-neurotraining.png" alt="Area Neurotraining"
+                             class="object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h4 class="neon-text mb-2">📌 Area Neurotraining (30–50 mq)</h4>
+                    <p class="text-secondary mb-0">Allenamenti cognitivi e motori personalizzati con tecnologie
+                        multisensoriali.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blocco: Innovation Lab -->
+        <div class="mb-5 bg-transparent neon-border rounded-4 p-4" data-aos="fade-left">
+            <!-- IMAGE HERE -->
+            <div class="row align-items-center g-4 flex-md-row-reverse">
+                <div class="col-md-5">
+                    <div class="ratio ratio-4x3 rounded-3 overflow-hidden">
+                        <img src="assets/images/area-innovation.png" alt="Innovation Lab" class="object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h4 class="neon-text mb-2">📌 Innovation Lab</h4>
+                    <p class="text-secondary mb-0">Ricerca su nuove tecnologie immersive e sviluppo di prototipi
+                        avanzati.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blocco: Training Center -->
+        <div class="mb-3 bg-transparent neon-border rounded-4 p-4" data-aos="fade-right">
+            <!-- IMAGE HERE -->
+            <div class="row align-items-center g-4">
+                <div class="col-md-5">
+                    <div class="ratio ratio-4x3 rounded-3 overflow-hidden">
+                        <img src="assets/images/area-training.png" alt="Training Center" class="object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h4 class="neon-text mb-2">📌 Training Center</h4>
+                    <p class="text-secondary mb-0">Percorsi formativi su misura per aziende e istituzioni
+                        scolastiche.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Fine Struttura tecnica  -->
+
+<!-- Inizio Benefici Educativi  -->
+<section class="py-5 text-light" style="background-color: #0b0f19;">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold neon-text">🎓 Gli eSports come Strumento di Apprendimento</h2>
+            <p class="lead mt-3">Gli eSports non sono solo competizioni videoludiche, ma potenti strumenti per
+                l’educazione e la formazione.</p>
+        </div>
+
+        <div class="mb-5">
+            <h4 class="neon-text">💡 Benefici educativi</h4>
+            <ul class="list-unstyled mt-3">
+                <li class="mb-3 text-secondary"><i class="bi bi-check-circle-fill text-success me-2"></i> Sviluppano il pensiero
+                    critico e strategico
+                </li>
+                <li class="mb-3 text-secondary"><i class="bi bi-check-circle-fill text-success me-2"></i> Favoriscono l’integrazione
+                    delle STEM (Scienze, Tecnologia, Ingegneria, Matematica)
+                </li>
+                <li class="mb-3 text-secondary"><i class="bi bi-check-circle-fill text-success me-2"></i> Migliorano l’apprendimento
+                    pratico grazie a metodologie interattive
+                </li>
+            </ul>
+            <p class="mt-5 text-secondary">WeSports Center integra gli eSports con la formazione scolastica e professionale, offrendo esperienze che
+                uniscono intrattenimento e apprendimento.</p>
+
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="bg-dark border border-neon rounded-4 p-4 h-100 text-center">
+                    <h3 class="neon-text">📊 70%</h3>
+                    <p class="small text-secondary">degli studenti che praticano eSports migliora le proprie competenze digitali
+                        (Harvard Business Review)</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-dark border border-neon rounded-4 p-4 h-100 text-center">
+                    <h3 class="neon-text">🎮 +25%</h3>
+                    <p class="small text-secondary">di aumento nell’engagement degli studenti nelle scuole con programmi eSports</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-dark border border-neon rounded-4 p-4 h-100 text-center">
+                    <h3 class="neon-text">🏢 64%</h3>
+                    <p class="small text-secondary">delle aziende ritiene che gli eSports sviluppino competenze professionali (Deloitte
+                        2024)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fine Benefici Educativi  -->
+
+<!-- Inizio Applicazioni pratiche  -->
+<section id="practical-apps" class="py-5 bg-black text-light">
+    <div class="container px-4">
+        <!-- Titolo -->
+        <h2 class="neon-text text-center mb-5">Applicazioni Pratiche nelle Aziende e nelle Scuole</h2>
+
+        <!-- Aziende -->
+        <div class="mb-5" data-aos="fade-up">
+            <h3 class="neon-text mb-3">🏢 Aziende e Corporate Wellbeing</h3>
+            <p class="text-secondary mb-4">
+                Il format <strong>WeSports Center</strong> è perfetto per le aziende che vogliono migliorare il benessere dei propri dipendenti.
+            </p>
+            <ul class="list-unstyled text-secondary neon-list mb-4">
+                <li class="mb-2"><strong>Aumenta la produttività</strong> → Un ambiente di lavoro sano riduce l’assenteismo e aumenta la motivazione.</li>
+                <li class="mb-2"><strong>Migliora il team building</strong> → Attività collaborative rafforzano le relazioni tra colleghi.</li>
+                <li class="mb-2"><strong>Potenzia le competenze digitali</strong> → Il gaming e la VR/MR permettono di sviluppare abilità utili in ambito lavorativo.</li>
+            </ul>
+            <p class="text-secondary mb-4"><strong>💡 Applicazioni pratiche in azienda:</strong></p>
+            <ul class="list-unstyled text-secondary ms-3 neon-list">
+                <li class="mb-2">Sessioni di training immersivo</li>
+                <li class="mb-2">Eventi di team building con eSports</li>
+                <li class="mb-2">Programmi di neurotraining per lo sviluppo delle soft skills</li>
+            </ul>
+        </div>
+
+        <!-- Scuole -->
+        <div data-aos="fade-up" data-aos-delay="100">
+            <h3 class="neon-text mb-3">🎓 Scuole e Istruzione</h3>
+            <p class="text-secondary mb-4">
+                WeSports Center rappresenta un ponte tra scuola e innovazione, offrendo agli studenti strumenti educativi innovativi.
+            </p>
+            <ul class="list-unstyled text-secondary neon-list mb-4">
+                <li class="mb-2"><strong>Rende l’apprendimento più coinvolgente</strong></li>
+                <li class="mb-2"><strong>Sviluppa il pensiero critico</strong> e l’attitudine al problem-solving</li>
+                <li class="mb-2"><strong>Favorisce l’inclusione</strong> scolastica attraverso il gaming</li>
+            </ul>
+            <p class="text-secondary mb-4"><strong>💡 Esempi di applicazione nelle scuole:</strong></p>
+            <ul class="list-unstyled text-secondary ms-3 neon-list">
+                <li class="mb-2">Palestra digitale per le scuole senza strutture sportive 🏫</li>
+                <li class="mb-2">Laboratori di coding e sviluppo di videogiochi 🎮</li>
+                <li class="mb-2">Progetti di alternanza scuola-lavoro con il settore eSports 🚀</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Fine Applicazioni pratiche  -->
+
+<!-- Inizio CTA  -->
+<section id="contact-cta" class="py-5 bg-dark text-light">
+    <div class="container px-4">
+        <div class="text-center mb-5">
+            <p class="lead text-secondary">📌 Vuoi scoprire come WeSports Center può trasformare la tua azienda o scuola?</p>
+            <h2 class="neon-text">📧 Contattaci per un progetto personalizzato!</h2>
+            <p class="mt-5">🚀 Siamo pronti a collaborare con aziende, scuole e istituzioni per portare il benessere e la tecnologia al centro della vita quotidiana.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form action="/invia-form" method="POST" class="bg-black p-4 rounded-4 border border-neon">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control bg-dark text-light border-neon" id="nome" name="nome" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="cognome" class="form-label">Cognome</label>
+                            <input type="text" class="form-control bg-dark text-light border-neon" id="cognome" name="cognome" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="azienda" class="form-label">Azienda</label>
+                        <input type="text" class="form-control bg-dark text-light border-neon" id="azienda" name="azienda">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control bg-dark text-light border-neon" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="richiesta" class="form-label">Richiesta</label>
+                        <textarea class="form-control bg-dark text-light border-neon" id="richiesta" name="richiesta" rows="5" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-lg neon-border px-5 py-3 position-relative overflow-hidden">
+                            Invia Richiesta
+                            <span class="btn-hover-glow"></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fine CTA  -->
+
+<!-- Inizio Footer  -->
+<footer class="footer bg-black text-light py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Colonna sinistra: Logo e info -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <img src="assets/images/logo.png" alt="Olympica Logo" class="mb-3 navbar-logo"
+                     style="filter: invert(1); margin-start: -50px;">
+                <p class="text-secondary small">
+                    Olympica S.r.l.<br>
+                    Via Thomas Alva Edison, 6<br>
+                    88046 Lamezia T. (CZ), Italia<br>
+                    P.IVA 03946400797
+                </p>
+            </div>
+
+            <!-- Colonna destra: Link e social -->
+            <div class="col-md-8 d-flex flex-column flex-md-row justify-content-md-end align-items-md-center">
+                <ul class="list-unstyled d-flex flex-column flex-md-row mb-3 mb-md-0 me-md-4">
+                    <li class="mb-2 mb-md-0 me-md-4"><a href="/" class="footer-link">Home</a></li>
+                    <li class="mb-2 mb-md-0 me-md-4"><a href="/privacy" class="footer-link">Privacy Policy</a></li>
+                </ul>
+                <div>
+                    <a href="https://www.linkedin.com/company/wesports-center" target="_blank" rel="noopener" class="footer-social-link">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-secondary mt-4">
+        <div class="text-center text-secondary small">
+            © 2025 Olympica S.r.l. – Tutti i diritti riservati.
+        </div>
+    </div>
+</footer>
+
+<!-- Fine Footer  -->
+
+<!-- Inizio Chatbot  -->
+<!-- Pulsante chatbot -->
+<button id="chat-button" aria-label="Apri chat">
+    <!-- Icona chat (SVG) -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+        <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418
+0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4
+10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0
+1-.244.637c-.079.186.074.394.273.362a22
+22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83
+1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0
+1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11
+11 0 0 0 .398-2"/>
+    </svg>
+</button>
+
+<!-- Finestra di chat -->
+<div id="chat-window">
+    <div id="chat-header">
+        <span>Chat WeSports</span>
+        <button id="chat-close" aria-label="Chiudi chat">&times;</button>
+    </div>
+    <div id="chat-messages">
+        <!-- Messaggi simulati -->
+        <div class="chat-message bot">Ciao! Sono WeSports Bot. Come posso aiutarti oggi?</div>
+        <div class="chat-message user">Ciao, ho bisogno di info sul mio account.</div>
+        <div class="chat-message bot">Certamente! Quali informazioni ti servono?</div>
+    </div>
+    <div class="chat-input-area">
+        <input type="text" placeholder="Scrivi un messaggio..." />
+        <button type="button">Invia</button>
+    </div>
+</div>
+
+<script>
+    // Apri la chat al click del pulsante
+    document.getElementById('chat-button').addEventListener('click', function() {
+        document.getElementById('chat-window').classList.add('open');
+        this.style.display = 'none';
+    });
+    // Chiudi la chat al click della "X"
+    document.getElementById('chat-close').addEventListener('click', function() {
+        document.getElementById('chat-window').classList.remove('open');
+        document.getElementById('chat-button').style.display = 'flex';
+    });
+</script>
+<!-- Fine Chatbot  -->
+
+
+<!-- Bootstrap 5 JS + Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS Init (se usi AOS) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({once: true, duration: 800});
+</script>
+</body>
+</html>
