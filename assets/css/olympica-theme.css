@@ -21,6 +21,11 @@ body {
     color: var(--neon-primary);
     text-shadow: 0 0 8px var(--neon-primary);
 }
+
+.neon-accent {
+    color: var(--neon-accent);
+}
+
 .neon-border {
     color: #fff;
     border: 2px solid var(--neon-secondary);
