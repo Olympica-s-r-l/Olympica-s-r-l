@@ -2,12 +2,17 @@
     --neon-primary: #0ff;
     --neon-secondary: #f0f;
     --neon-accent: #ff0;
-    --bg-color: #111111;
+    --bg-color: #0b0f19;
+    --bg-color-alt: #212529;
     --neon-color: #0ff; /* Colore neon ciano */
     --text-color: #eee;
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -15,11 +20,22 @@ body {
     width: 190px;
 }
 
+.bg-main {
+    background-color: var(--bg-color);
+}
+
+.bg-main-alt {
+    background-color: var(--bg-color-alt);
+}
 
 /* Neon text & borders */
 .neon-text {
     color: var(--neon-primary);
     text-shadow: 0 0 8px var(--neon-primary);
+}
+
+.neon-text-no-glow {
+    color: var(--neon-primary);
 }
 
 .neon-accent {
@@ -60,12 +76,10 @@ body {
 .neon-table thead th {
     color: var(--neon-primary);
     border-bottom: 2px solid var(--neon-primary);
-    text-shadow: 0 0 8px var(--neon-primary);
 }
 
 .neon-table tbody th {
     color: var(--neon-secondary);
-    text-shadow: 0 0 6px var(--neon-secondary);
 }
 
 .neon-table tbody td {
@@ -96,6 +110,12 @@ body {
 /* Card adjustments */
 .card {
     background: rgba(255,255,255,0.02);
+}
+
+/* Desaturate images to make them more uniform looking */
+.img-uniform {
+    filter: grayscale(60%) contrast(1.1) brightness(1.05);
+    transition: filter 0.3s ease;
 }
 
 /* Responsive adjustments */
@@ -181,136 +201,6 @@ body {
     color: var(--neon-accent);
 }
 
-
-/* Pulsante chat flottante */
-#chat-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background-color: var(--bg-color);
-    border: 2px solid var(--neon-color);
-    border-radius: 50%;
-    color: var(--neon-color);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s, color 0.3s;
-    box-shadow: 0 0 10px var(--neon-color), 0 0 20px var(--neon-color);
-    z-index: 1000;
-}
-#chat-button:hover {
-    background-color: var(--neon-color);
-    color: var(--bg-color);
-}
-/* Finestra di chat */
-#chat-window {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 350px;
-    max-height: 80vh;
-    background-color: var(--bg-color);
-    border: 2px solid var(--neon-color);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    opacity: 0;
-    transform: translateY(100%) scale(0.8);
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-    z-index: 999;
-    pointer-events: none;
-}
-/* Mostra la chat quando aperta */
-#chat-window.open {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-    pointer-events: auto;
-}
-/* Header della chat */
-#chat-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    padding: 10px;
-    border-bottom: 1px solid var(--neon-color);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-#chat-header span {
-    font-weight: bold;
-    font-size: 1rem;
-}
-#chat-close {
-    background: none;
-    border: none;
-    color: var(--text-color);
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-#chat-close:hover {
-    color: var(--neon-color);
-}
-/* Area messaggi simulata */
-#chat-messages {
-    flex: 1;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-}
-.chat-message {
-    padding: 8px 12px;
-    margin-bottom: 8px;
-    border-radius: 10px;
-    max-width: 80%;
-    line-height: 1.4;
-}
-.chat-message.bot {
-    align-self: flex-start;
-    background-color: #222;
-    border: 1px solid var(--neon-color);
-    color: var(--text-color);
-}
-.chat-message.user {
-    align-self: flex-end;
-    background-color: #333;
-    color: var(--text-color);
-}
-/* Area input */
-.chat-input-area {
-    display: flex;
-    padding: 10px;
-    border-top: 1px solid var(--neon-color);
-}
-.chat-input-area input {
-    flex: 1;
-    padding: 8px;
-    background-color: #222;
-    border: 1px solid var(--neon-color);
-    border-radius: 4px;
-    color: var(--text-color);
-    outline: none;
-}
-.chat-input-area input::placeholder {
-    color: #aaa;
-}
-.chat-input-area button {
-    margin-left: 8px;
-    padding: 8px 12px;
-    background-color: var(--neon-color);
-    border: none;
-    color: var(--bg-color);
-    border-radius: 4px;
-    cursor: pointer;
-}
-.chat-input-area button:hover {
-    opacity: 0.8;
-}
 /* Adattamento mobile */
 @media (max-width: 576px) {
     #chat-window {
