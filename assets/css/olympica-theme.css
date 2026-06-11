@@ -561,17 +561,35 @@ table.neontable tbody tr:hover th { background: rgba(54,205,255,.05); }
 .form-wrap textarea:focus { border-color: var(--lime); }
 .form-wrap .row { margin-bottom: 16px; }
 .form-wrap .check {
-  display: flex; gap: 10px; align-items: flex-start;
-  font-size: 13px; color: var(--text-dim); margin-top: 12px;
+  display: flex; gap: 12px; align-items: flex-start;
+  font-size: 13px; color: var(--text-dim); margin-top: 16px;
 }
 .form-wrap .check input[type="checkbox"] {
-  width: auto; flex-shrink: 0; margin-top: 2px;
-  padding: 0; accent-color: var(--lime);
+  appearance: none; -webkit-appearance: none;
+  width: 20px !important; height: 20px; flex-shrink: 0; margin-top: 1px;
+  padding: 0; border: 1.5px solid var(--line-2); border-radius: 5px;
+  background: var(--bg-2); cursor: pointer;
+  transition: border-color .2s, background .2s;
+  position: relative;
+}
+.form-wrap .check input[type="checkbox"]:checked {
+  background: var(--lime); border-color: var(--lime);
+}
+.form-wrap .check input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute; left: 5px; top: 2px;
+  width: 6px; height: 11px;
+  border: 2px solid var(--lime-ink);
+  border-top: none; border-left: none;
+  transform: rotate(45deg);
+}
+.form-wrap .check input[type="checkbox"]:focus-visible {
+  outline: 2px solid var(--lime); outline-offset: 2px;
 }
 .form-wrap .check label {
   text-transform: none; letter-spacing: 0;
   font-family: var(--body); color: var(--text-dim);
-  font-size: 13px; margin-bottom: 0;
+  font-size: 13px; margin-bottom: 0; cursor: pointer; line-height: 1.5;
 }
 .form-wrap button[type="submit"] {
   margin-top: 20px; background: var(--lime); color: var(--lime-ink);
