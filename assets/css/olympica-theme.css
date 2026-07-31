@@ -732,7 +732,6 @@ footer.footer .menu-col a { display: block; padding: 4px 0; }
 .events-masonry .ev-slot:hover { border-color: var(--lime); transform: translateY(-3px); }
 .events-masonry .ev-slot img {
   width: 100%; height: auto; display: block;
-  filter: grayscale(1) contrast(1.05) brightness(.7);
   transition: transform .4s ease;
 }
 .events-masonry .ev-slot:hover img { transform: scale(1.04); }
